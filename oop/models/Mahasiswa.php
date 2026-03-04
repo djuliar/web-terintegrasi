@@ -14,7 +14,7 @@ class Mahasiswa {
     }
 
     public function read() {
-        $query = "SELECT * FROM $this->table";
+        $query = "SELECT * FROM $this->table ORDER BY nim DESC";
         return $this->conn->query($query);
     }
 

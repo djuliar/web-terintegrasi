@@ -9,6 +9,6 @@ $mhs = new Mahasiswa($conn);
 $result = $mhs->read();
 
 while($row = $result->fetch_assoc()){
-    echo $row['nim'] . ' - ' . $row['nama']."<br>";
+    echo $row['nim'] . ' - ' . $row['nama'] . ' - ' . $row['jurusan'] . "<br>";
 }
 ?>
